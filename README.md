@@ -9,7 +9,7 @@ The first included server is `mikrotik`: a stdio MCP server for RouterOS SSH deb
 On a remote PC:
 
 ```powershell
-git clone <repo-url>
+git clone https://github.com/miguefinghub/mcpHelp.git
 cd MCP_Help
 .\install.ps1
 code .
