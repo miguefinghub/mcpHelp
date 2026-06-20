@@ -1,0 +1,23 @@
+[project]
+name = "mcp-help"
+version = "0.1.0"
+description = "Small MCP helpers for remote debugging and operations."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.2.0",
+    "paramiko>=3.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+mcp-help-mikrotik = "mcp_help.servers.mikrotik.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
